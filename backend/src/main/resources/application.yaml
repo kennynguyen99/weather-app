@@ -1,0 +1,7 @@
+openweathermap:
+  api:
+    base-url: "https://api.openweathermap.org/data/2.5"
+    key: "6ec831cb4d89d1fd9dbb4c366eeae4e2"
+    refresh-interval: 10
+    language: "en"
+    api-version: "2.5"

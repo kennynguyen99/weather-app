@@ -1,0 +1,111 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+################################ frontend #######################################################
+# Node modules
+frontend/node_modules/
+
+# Build directory
+frontend/build/
+
+# Local environment files
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# Log files
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# Dependency directories
+frontend/bower_components/
+
+# IDE or editor-specific files
+frontend/.vscode/
+frontend/.idea/
+
+# MacOS files
+frontend/.DS_Store
+
+# Windows thumbnail cache files
+frontend/Thumbs.db
+
+# Optional NPM cache directory
+frontend/.npm/
+
+# Optional REACT Native cache/lock files
+frontend/*.lock
+
+# Coverage directory used by testing tools
+frontend/coverage/
+
+# Output of 'npm pack'
+frontend/*.tgz
+
+# Compiled files
+frontend/*.out
+frontend/*.log
+
+# Temporary files and directories
+frontend/.tmp/
+frontend/.temp/
+
+################################ backend ##################################################
+# Help file
+backend/HELP.md
+
+# Gradle files
+backend/.gradle
+backend/build/
+!backend/gradle/wrapper/gradle-wrapper.jar
+!**/backend/src/main/**/build/
+!**/backend/src/test/**/build/
+
+### STS (Spring Tool Suite) ###
+backend/.apt_generated
+backend/.classpath
+backend/.factorypath
+backend/.project
+backend/.settings
+backend/.springBeans
+backend/.sts4-cache
+backend/bin/
+!**/backend/src/main/**/bin/
+!**/backend/src/test/**/bin/
+
+### IntelliJ IDEA ###
+backend/.idea
+backend/*.iws
+backend/*.iml
+backend/*.ipr
+backend/out/
+!**/backend/src/main/**/out/
+!**/backend/src/test/**/out/
+
+### NetBeans ###
+backend/nb

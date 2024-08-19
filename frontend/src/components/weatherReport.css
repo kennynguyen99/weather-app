@@ -1,0 +1,69 @@
+.weather-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.weather-container .back-link {
+    align-self: flex-start; /* Aligns the link to the left of the container */
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 20px; /* Add space between the link and the weather-info */
+}
+
+.weather-info {
+    text-align: center;
+}
+
+.city-name {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.weather-details {
+    font-size: 1.5rem;
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.temperature {
+    font-size: 3rem;
+    margin: 0.5rem 0;
+}
+
+.description {
+    margin: 0.5rem 0;
+}
+
+.high-low {
+    margin: 0.5rem 0;
+}
+
+.sunny {
+    background: url('../assets/sunny-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.cloudy {
+    background: url('../assets/cloudy-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.rainy {
+    background: url('../assets/rainy-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.snowy {
+    background: url('../assets/snowy-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.default {
+    background: url('../assets/image-not-found.jpg') no-repeat center center fixed;
+    background-size: cover;
+}

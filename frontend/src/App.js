@@ -1,8 +1,11 @@
-import logo from './logo.svg';
-
 // Import weather icon
 import cloudySunIcon from './assets/cloudy-sun-icon.png';
+import logo from './assets/weather-logo.svg';
+
+// Import css styles
 import './App.css';
+import './navBar.css';
+
 // import weather utils functions
 import { fetchWeatherForCities } from './weatherUtils';
 // import to do api calls to backend
@@ -60,16 +63,27 @@ function App() {
         <Router>
             <div className="App">
                 <header className="App-header">
-                    <h1>Weather Forecast</h1>
+                    <img className="logo" src={logo} alt="logo"/>
+
+                    <nav>
+                        <ul className="nav__links">
+                            <li><a href="#"> Home</a></li>
+                            <li><a href="#"> Projects</a></li>
+                            <li><a href="#"> About</a></li>
+                        </ul>
+                    </nav>
+                    <a className="cta" href="#">
+                        <button>Contact</button>
+                    </a>
                 </header>
 
                 {error && <div className="error">{error}</div>}
 
                 <Routes>
                     <Route path="/" element={<HomePage
-                                weatherData={weatherData}
-                                weatherCities={weatherCities}
-                                /> }
+                        weatherData={weatherData}
+                        weatherCities={weatherCities}
+                    />}
                     />
                     <Route path="/weather/:city" element={<WeatherReport weatherData={weatherData} />} />
                 </Routes>
